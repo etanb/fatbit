@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/etanb/fatbit/issues"
   },
-  "homepage": "https://github.com/etanb/fatbit"
+  "homepage": "https://github.com/etanb/fatbit",
+  "dependencies": {
+    "ejs": "^1.0.0"
+  }
 }

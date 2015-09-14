@@ -1,0 +1,103 @@
+/* 
+
+CREDIT TO:
+
+COLOR INSPIRATION
+http://www.colourlovers.com/palette/932683/Compatible
+
+CSS ANIMATION EXCELLENCE
+http://codepen.io/seyedi/pen/nCvKA
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+	background-color: rgb(235, 235, 235);
+}
+
+body p,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.fatbit-header {
+	border-bottom: 5px solid #FF3D7F;
+}
+
+.fatbit-header img {
+	width: 50px;
+}
+
+.cloud img {
+	width: 25px;
+	display: inline-block;
+}
+
+.cloud h3 {
+	display: inline-block;
+}
+
+/* Cloud CSS */
+
+.cloud {
+  width  : 100px;
+  height : 100px;
+  margin : 100px auto;
+  border-radius : 50%;
+  background    : #3FB8AF;
+  cursor : pointer;
+  box-shadow    : 0     10px  5px  -7px #666, 
+                  75px   1px  0    -3px #3FB8AF,
+                  78px   4px  6px  -5px #666,
+                 -77px   1px  0    -3px #3FB8AF,
+                 -80px   4px  6px  -5px #666,
+                 -26px -50px  0     9px #3FB8AF,
+                 -27px -54px  6px   7px #666,
+                  53px -50px  0   -18px #3FB8AF,
+                  56px -53px  6px -21px #666;
+}
+
+/* Animations for homepage and recipe cards */
+
+.animated { 
+    -webkit-animation-duration: 1.5s; 
+    animation-duration: 1.5s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-in-out; 
+    animation-timing-function: ease-in-out; 
+} 
+
+@-webkit-keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+
+.fadeInUp { 
+    -webkit-animation-name: fadeInUp; 
+    animation-name: fadeInUp; 
+}
