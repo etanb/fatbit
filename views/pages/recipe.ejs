@@ -1,23 +1,57 @@
 <% include ../partials/header %>
+	<div class="container-fluid">
+		<div class="row fatbit-header">
+			<div class="col-md-6">
+				<img src="/public/img/fitbitlogo.png" /><h3>fatbit</h3>
+			</div>
+			<div class="col-md-6 fatbit-profile">
+				<h3 class="pull-right">
+					<%= profileName %>
+					<br />
+					Recent Burn: <%= recentCalorie %>
+				</h3>
+				<img class="pull-right" src=<%= profileImage %> />
+			</div>
+		</div>
+	</div>
 
-	<h1>RECIPE PAGE</h1>
-	<p><%= profileImage %></p>
-	<br />
-	<p><%= profileName %></p>
-	<br />
-	<p><%= recentCalorie %></p>
-	<br />
-	<p><%= recipeHealthyImage %></p>
-	<br />
-	<p><%= recipeHealthyName %></p>
-	<br />
-	<p><%= recipeHealthyURL %></p>
-	<br />
-	<p><%= recipeFattyImage %></p>
-	<br />
-	<p><%= recipeFattyName %></p>
-	<br />
-	<p><%= recipeFattyURL %></p>
-	<br />
+	<div class="container-fluid card-container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="container">
+				    <div class="card">
+				      <div class="front">
+				      	<h2>Healthy Choice</h2>
+				      	<img id="healthyURL" src="/public/img/apple.svg" />
+				      </div>
+				      <div class="back">
+				        <div class="content">
+				          <img src=<%= recipeHealthyImage %> />
+				          <p><%= recipeHealthyName %></p>
+				          <a href=<%= recipeHealthyURL %>>Let's get fit!</a>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			</div>
+			<div class="col-md-6">
+				<div class="container">
+				    <div class="card">
+				      <div class="front">
+				      	<h2>Fatty Choice</h2>
+				      	<img id="fatURL" src="/public/img/donut.svg" />
+				      </div>
+				      <div class="back">
+				        <div class="content">
+				          <img src=<%= recipeFattyImage %> />
+				          <p><%= recipeFattyName %></p>
+				          <a href=<%= recipeFattyURL %>>Let's get fat!</a>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			</div>
+		</div>
+	</div>
 
 <% include ../partials/footer %>

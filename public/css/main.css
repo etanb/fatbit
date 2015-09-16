@@ -37,27 +37,54 @@ body h6 {
 
 .fatbit-header {
 	border-bottom: 5px solid #FF3D7F;
+  height: 85px;
+}
+
+.fatbit-footer {
+  border-top: 5px solid #FF3D7F;
+  height: 85px;
+}
+
+.fatbit-footer p {
+  float: right;
+  padding-right: 10px;
 }
 
 .fatbit-header img {
 	width: 50px;
+  margin-top: 15px;
+  margin-left: 40px;
+  display: inline-block;
+}
+
+.fatbit-header img:last-child {
+  border-radius: 50px;
+}
+
+.fatbit-header h3 {
+  display: inline-block;
+  vertical-align: bottom;
+  padding-left: 10px;
 }
 
 .cloud img {
-	width: 25px;
+	width: 30px;
+  margin: 10px;
 	display: inline-block;
 }
 
 .cloud h3 {
 	display: inline-block;
+  font-size: 26px;
+  vertical-align: bottom;
 }
 
 /* Cloud CSS */
 
 .cloud {
-  width  : 100px;
-  height : 100px;
-  margin : 100px auto;
+  width  : 150px;
+  height : 150px;
+  margin : 250px auto;
   border-radius : 50%;
   background    : #3FB8AF;
   cursor : pointer;
@@ -108,4 +135,145 @@ body h6 {
 .fadeInUp { 
     -webkit-animation-name: fadeInUp; 
     animation-name: fadeInUp; 
+}
+
+.login-container {
+  padding-top: 20px;
+}
+
+
+/* Card CSS */
+
+.card-container {
+  height: 650px;
+}
+
+.container {
+  padding-top: 60px;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin: 10px 0 10px 4%;
+  
+  /* Set the depth of the elements */
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+}
+
+.container:first-child {
+  margin-left: 0;
+}
+
+.card {
+  left: 20%;
+  width: 450px;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  
+  /* Set the transition effects */
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  -o-transition: -o-transform 0.4s;
+  transition: transform 0.4s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.card.flipped {
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+
+.card .front,
+.card .back {
+  border-radius: 15px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 260px;
+  color: black;
+  text-align: center;
+  font-size: 4em;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+  box-shadow: 3px 5px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.card .back {
+  width: 94%;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: 16px;
+  text-align: left;
+  line-height: 25px;
+}
+
+.formItem:first-child {
+  margin-top: 20px;
+}
+
+.card .back label {
+  display: inline-block;
+  width: 70px;
+  text-align: left;
+}
+
+.card .front {
+  background: #3FB8AF;;
+}
+
+.card .back {
+  background: #3FB8AF;;
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+
+.container:first-child .card .front {
+  background: #3FB8AF;;
+}
+
+.container:first-child .card .back {
+  background: #3FB8AF;;
+}
+
+.cardTitle {
+  font-size: 1.4em;
+  line-height: 1.2em;
+  margin: 0;
+}
+
+.content {
+  text-align: center;
+  padding: 4%;
+  font-weight: 100;
+}
+
+.content img {
+  width: 75%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.content p {
+  font-size: 24px;
+}
+
+.content a {
+  font-size: 24px;
+  color: #FF3D7F;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
