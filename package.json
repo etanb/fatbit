@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/etanb/fatbit",
   "dependencies": {
-    "ejs": "^1.0.0"
+    "async": "*",
+    "ejs": "^2.3.4",
+    "express": "^5.0.0-alpha.2",
+    "fitbit-node": "*",
+    "request": "^2.62.0"
   }
 }
